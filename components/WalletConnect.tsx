@@ -22,7 +22,8 @@ const WalletConnect = () => {
 
                 const weiBalance = await web3.eth.getBalance(account);
                 const ethBalance = web3.utils.fromWei(weiBalance, 'ether');
-                console.log(ethBalance);
+
+                alert(`Your wallet address is ${account} and your wallet balance is ${ethBalance} ether`)
 
             } else {
                 alert('MetaMask is not installed. Please install MetaMask to use this feature.');
