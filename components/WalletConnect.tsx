@@ -5,8 +5,6 @@ import Web3 from 'web3';
 import { Loader2 } from 'lucide-react';
 
 const WalletConnect = () => {
-    const [walletAddress, setWalletAddress] = useState('');
-    const [balance, setBalance] = useState('');
 
     const [isLoading, setIsLoading] = useState(false)
 
@@ -21,12 +19,9 @@ const WalletConnect = () => {
 
                 const accounts = await web3.eth.getAccounts();
                 const account = accounts[0];
-                setWalletAddress(account);
 
                 const weiBalance = await web3.eth.getBalance(account);
                 const ethBalance = web3.utils.fromWei(weiBalance, 'ether');
-                setBalance(ethBalance);
-
                 console.log(ethBalance);
 
             } else {

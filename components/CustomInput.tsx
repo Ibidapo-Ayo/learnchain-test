@@ -18,7 +18,7 @@ type CustomProps = {
 }
 
 const RenderField = ({ field, props }: { field: any, props: CustomProps }) => {
-    const { fieldType, placeholder, type, renderSkeleton, children } = props
+    const { fieldType, placeholder, type, renderSkeleton } = props
     if (fieldType === FormFieldTypes.INPUT) {
         return (
             <FormControl>
