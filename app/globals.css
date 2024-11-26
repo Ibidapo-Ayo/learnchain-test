@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .shad-input {
+    @apply border-blue-800 focus-visible:ring-1 focus-visible:ring-offset-2 ring-blue-700 !important;
+  }
+}
+
