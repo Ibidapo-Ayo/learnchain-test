@@ -38,7 +38,7 @@ const RenderField = ({ field, props }: { field: any, props: CustomProps }) => {
 }
 
 const CustomInput = (props: CustomProps) => {
-    const { control, name, fieldType, label, placeholder } = props
+    const { control, name, fieldType, label } = props
     return (
         <FormField
             control={control}
